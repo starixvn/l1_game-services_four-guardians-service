@@ -1,4 +1,5 @@
-import mongoose from "mongoose";
-import { middlewares } from "sc-common";
+import FourGuardiansHallOfFames from "./four-guardians-fames";
+import FourGuardiansFreeSpins from "./four-guardians-freespins";
+import FourGuardiansRounds from "./four-guardians-rounds";
 
-export default (config) => middlewares.database.configureDatabase(mongoose, config);
+export { FourGuardiansRounds, FourGuardiansFreeSpins, FourGuardiansHallOfFames };
