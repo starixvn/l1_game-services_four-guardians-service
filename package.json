@@ -1,5 +1,5 @@
 {
-    "name": "sc2-four-guardians-service",
+    "name": "four-guardians-service",
     "version": "1.0.0",
     "description": "",
     "main": "./src/app.js",
