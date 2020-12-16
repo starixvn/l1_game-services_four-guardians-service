@@ -1,7 +1,8 @@
 export default {
     id: 29,
-    name: "Four Guardians",
+    name: "FourGuardians",
     durations: {
         wholeRound: 60,
+        lockingBet: 0,
     },
 };
