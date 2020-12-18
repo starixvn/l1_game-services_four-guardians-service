@@ -2,12 +2,12 @@ import { Crons, SlotGameApp, SlotGameData, SlotGameDefinition } from "sc-slot-ga
 
 import appConfigs from "./app-configs";
 import gameSettings from "./game-settings";
-import { FourGuardiansFreeSpins, FourGuardiansHallOfFames, FourGuardiansRounds } from "./models";
+import { FourGuardiansFames, FourGuardiansFreeSpins, FourGuardiansRounds } from "./models";
 import Startup from "./startup";
 
 const run = async () => {
     const gameData = new SlotGameData(gameSettings.durations.wholeRound);
-    const definition = new SlotGameDefinition(gameSettings, FourGuardiansRounds, FourGuardiansFreeSpins, FourGuardiansHallOfFames);
+    const definition = new SlotGameDefinition(gameSettings, FourGuardiansRounds, FourGuardiansFreeSpins, FourGuardiansFames);
 
     const bot = new Crons.SlotGameBot({ definition, gameData });
     const gameCron = new Crons.SlotGameCron(definition, gameData, bot);
