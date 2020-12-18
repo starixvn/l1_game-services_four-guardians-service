@@ -10,7 +10,7 @@ const run = async () => {
     const definition = new SlotGameDefinition(gameSettings, FourGuardiansRounds, FourGuardiansFreeSpins, FourGuardiansFames);
 
     const bot = new Crons.SlotGameBot({ definition, gameData });
-    const gameCron = new Crons.SlotGameCron(definition, gameData, bot);
+    const gameCron = new Crons.SlotGameCron({ definition, gameData, bot });
     const betQueue = new Crons.SlotProcessBetQueue(definition, gameData);
     const startup = new Startup(appConfigs, definition, gameData, gameCron, betQueue);
     const app = new SlotGameApp(appConfigs, definition, gameData, startup);
