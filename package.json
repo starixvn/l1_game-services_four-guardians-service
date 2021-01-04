@@ -20,7 +20,7 @@
     "type": "module",
     "dependencies": {
         "nodemon": "^2.0.4",
-        "sc-slot-game-base": "^1.0.0-beta.88"
+        "sc-slot-game-base": "^1.0.0-beta.89"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.11.5",
