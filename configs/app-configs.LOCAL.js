@@ -53,5 +53,5 @@ export default {
     enableCorsWs: true,
     corsUrls: ["http://localhost:7456", "http://l2-games.lumigame.com", "http://l2-admin.lumigame.com", "http://localhost:7000"],
     freeSpinLiveSeconds: 86400, // 1 day
-    bonusLiveSeconds: 126,
+    bonusLiveSeconds: 128,
 };
