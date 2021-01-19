@@ -1,19 +1,15 @@
-import { Crons, SlotGameApp, SlotGameData, SlotGameDefinition } from "sc-slot-game-base";
+import { Core } from "sc-game-base";
+import { SlotGameData, SlotGameDefinition } from "sc-slot-game-base";
 
 import appConfigs from "./app-configs";
+import FourGuardiansRounds from "./four-guardians-container-registry";
 import gameSettings from "./game-settings";
-import { FourGuardiansFames, FourGuardiansFreeSpins, FourGuardiansRounds } from "./models";
-import Startup from "./startup";
 
 const run = async () => {
     const gameData = new SlotGameData(gameSettings.durations.wholeRound);
-    const definition = new SlotGameDefinition(gameSettings, FourGuardiansRounds, FourGuardiansFreeSpins, FourGuardiansFames);
-
-    const bot = new Crons.SlotGameBot({ definition, gameData });
-    const gameCron = new Crons.SlotGameCron({ definition, gameData, bot });
-    const betQueue = new Crons.SlotProcessBetQueue(definition, gameData);
-    const startup = new Startup(appConfigs, definition, gameData, gameCron, betQueue);
-    const app = new SlotGameApp(appConfigs, definition, gameData, startup);
+    const definition = new SlotGameDefinition(gameSettings);
+    const container = new FourGuardiansRounds().register(appConfigs, definition, gameData);
+    const app = new Core.BaseGameApp(container);
 
     await app.run();
 };
