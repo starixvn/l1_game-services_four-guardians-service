@@ -41,7 +41,7 @@ export default {
     },
     sentry: {
         sentryUrl: "http://405685c1446540f9b105579e1aefe04e@10.99.99.187:800/205",
-        logIdentifier: "blackjack",
+        logIdentifier: "fourguardians",
         env: "SIT",
     },
     authenticateSettings: {
