@@ -1,0 +1,56 @@
+export default {
+    hostingPort: 5000,
+    apiSettings: {
+        enabledApi: true,
+        apiUrl: "http://l2-api1.lumigame.com",
+        authUrl: "http://l2-auth1.lumigame.com",
+        client: {
+            id: "game-server",
+            secret: "gameserver@20luminet&",
+        },
+        useAuthenticate: true,
+        requestTimeout: 10000,
+        placeBetTimeout: 4500,
+        hitJackpotTimeout: 200000,
+        enabledApiLogs: true,
+    },
+    mainServerApiSettings: {
+        url: "http://haproxy.lumigame.com:7001/main/api",
+        auth: {
+            url: "http://l2-auth1.lumigame.com",
+            id: "game-services",
+            secret: "gameservices@20luminet&",
+        },
+        requestTimeout: 10000,
+        useAuthenticate: true,
+    },
+    socketOptions: {
+        pingInterval: 60 * 1000,
+        pingTimeout: 60 * 1000,
+        transports: ["websocket"],
+        allowUpgrades: false,
+    },
+    enabledLogs: true,
+    database: {
+        url: "mongodb://lmn_backend:LmnBackend@10.10.50.13:37104/?replicaSet=L2pLocal",
+        options: {
+            dbName: "minigame",
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            auto_reconnect: true,
+        },
+    },
+    sentry: {
+        sentryUrl: "https://e6c60c5520b44f37b460e918f959e59b@sentryuat.sabagame.com/204",
+        logIdentifier: "fourguardians",
+        env: "LOCAL",
+    },
+    authenticateSettings: {
+        audiences: ["api", "admin-api"],
+    },
+    adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
+    enableCorsWs: true,
+    corsUrls: ["http://localhost:7456", "http://l2-games1.lumigame.com", "http://l2-admin1.lumigame.com", "http://localhost:7000"],
+    freeSpinLiveSeconds: 86400, // 1 day
+    bonusLiveSeconds: 127,
+};
