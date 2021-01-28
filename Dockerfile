@@ -1,20 +1,23 @@
+# Base image
 FROM registry.nexdev.net:5050/docker/node:14.15.1-slim
-
-USER root
 
 ARG NODE_ENV=production
 ENV NODE_ENV $NODE_ENV
-RUN mkdir /app && chown node:node /app
-WORKDIR /app
+RUN mkdir /opt/node_app && chown node:node /opt/node_app
+WORKDIR /opt/node_app
 
 USER node
+
 COPY package.json package-lock.json* ./
 
 RUN npm run reg
-RUN npm install --loglevel verbose && npm cache clean --force
-ENV PATH /app/node_modules/.bin:$PATH
+RUN npm install && npm cache clean --force
+ENV PATH /opt/node_app/node_modules/.bin:$PATH
 
-COPY ./src/ .
-HEALTHCHECK --interval=10s CMD node --es-module-specifier-resolution=node healthcheck.js
+WORKDIR /opt/node_app/app
+COPY ./src .
+
+HEALTHCHECK --interval=30s CMD node --es-module-specifier-resolution=node healthcheck.js
 
 CMD [ "node", "--max-old-space-size=8192", "--es-module-specifier-resolution=node", "./app.js" ]
+
