@@ -15,7 +15,7 @@ export default {
         enabledApiLogs: true,
     },
     mainServerApiSettings: {
-        url: "http://haproxy.lumigame.com:7001/main/api",
+        url: "http://haproxy.lumigame.com:7101/main/api",
         auth: {
             url: "http://l2-auth1.lumigame.com",
             id: "game-services",
