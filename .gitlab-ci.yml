@@ -1,4 +1,4 @@
 include:
-  - project: "ci/repos-ci/pentagon_l2_four_guardians_service"
+  - project: "ci/repos-ci/pentagon_l1_four_guardians_service"
     ref: master
     file: "gitlab-ci.yml"
