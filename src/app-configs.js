@@ -41,7 +41,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "https://e6c60c5520b44f37b460e918f959e59b@sentryuat.sabagame.com/204",
+        sentryUrl: "https://8f52d1ed1dbc4500adddbfb6e20f66aa@sentryuat.sabagame.com/217",
         logIdentifier: "fourguardians",
         env: "LOCAL",
     },
@@ -50,7 +50,13 @@ export default {
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     enableCorsWs: false,
-    corsUrls: ["http://localhost:7456", "http://localhost:7000", "http://games.lumigame.com", "http://admin.lumigame.com"],
+    corsUrls: [
+        "http://localhost:7456",
+        "http://10.5.10.14:7456",
+        "http://localhost:7000",
+        "http://games.lumigame.com",
+        "http://admin.lumigame.com",
+    ],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 127,
 };

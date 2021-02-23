@@ -2,8 +2,8 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://l2-api.lumigame.com",
-        authUrl: "http://l2-auth.lumigame.com",
+        apiUrl: "http://api.lumigame.com",
+        authUrl: "http://auth.lumigame.com",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
@@ -15,9 +15,9 @@ export default {
         enabledApiLogs: true,
     },
     mainServerApiSettings: {
-        url: "http://haproxy.lumigame.com:7001/main/api",
+        url: "http://haproxy.lumigame.com:7000/main/api",
         auth: {
-            url: "http://l2-auth.lumigame.com",
+            url: "http://auth.lumigame.com",
             id: "game-services",
             secret: "gameservices@20luminet&",
         },
@@ -32,7 +32,7 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend@10.10.50.13:37101/?replicaSet=L2Local",
+        url: "mongodb://lmn_backend:LmnBackend@10.10.50.13:27101/?replicaSet=L1Local",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
@@ -41,7 +41,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "https://e6c60c5520b44f37b460e918f959e59b@sentryuat.sabagame.com/204",
+        sentryUrl: "https://8f52d1ed1dbc4500adddbfb6e20f66aa@sentryuat.sabagame.com/217",
         logIdentifier: "fourguardians",
         env: "LOCAL",
     },
@@ -50,7 +50,13 @@ export default {
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     enableCorsWs: true,
-    corsUrls: ["http://localhost:7456", "http://l2-games.lumigame.com", "http://l2-admin.lumigame.com", "http://localhost:7000"],
+    corsUrls: [
+        "http://localhost:7456",
+        "http://10.5.10.14:7456",
+        "http://localhost:7000",
+        "http://games.lumigame.com",
+        "http://admin.lumigame.com",
+    ],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 127,
 };
