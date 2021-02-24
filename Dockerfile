@@ -7,8 +7,10 @@ ENV NODE_ENV $NODE_ENV
 RUN mkdir /app && chown node:node /app
 WORKDIR /app
 
-USER node
-COPY package.json package-lock.json* ./
+WORKDIR /opt/node_app
+COPY package.json yarn.lock ./
+RUN npm run reg
+RUN yarn install --production
 
 RUN npm run reg
 RUN npm install --loglevel verbose && npm cache clean --force
