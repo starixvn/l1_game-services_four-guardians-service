@@ -43,7 +43,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "https://8f52d1ed1dbc4500adddbfb6e20f66aa@sentryuat.sabagame.com/217",
+        sentryUrl: "https://bfcba2ed6dbc4d4193bba01981b2812d@sentryuat.sabagame.com/19",
         logIdentifier: "fourguardians",
         env: "LOCAL_1",
     },
