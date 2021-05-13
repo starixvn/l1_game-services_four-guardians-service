@@ -3081,6 +3081,14 @@
   "resolved" "http://npm.lumigame.com/core-util-is/-/core-util-is-1.0.2.tgz"
   "version" "1.0.2"
 
+"cors@^2.8.5":
+  "integrity" "sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g=="
+  "resolved" "http://npm.lumigame.com/cors/-/cors-2.8.5.tgz"
+  "version" "2.8.5"
+  dependencies:
+    "object-assign" "^4"
+    "vary" "^1"
+
 "cosmiconfig@^6.0.0":
   "integrity" "sha512-xb3ZL6+L8b9JLLCx3ZdoZy4+2ECphCMo2PwqgP1tlfVq6M6YReyzBJtvWWtbDSpNr9hn96pkCiZqUcFEc+54Qg=="
   "resolved" "http://npm.lumigame.com/cosmiconfig/-/cosmiconfig-6.0.0.tgz"
@@ -3600,9 +3608,9 @@
     "once" "^1.4.0"
 
 "engine.io-client@~3.5.0":
-  "integrity" "sha512-oVu9kBkGbcggulyVF0kz6BV3ganqUeqXvD79WOFKa+11oK692w1NyFkuEj4xrkFRpZhn92QOqTk4RQq5LiBXbQ=="
-  "resolved" "http://npm.lumigame.com/engine.io-client/-/engine.io-client-3.5.1.tgz"
-  "version" "3.5.1"
+  "integrity" "sha512-QEqIp+gJ/kMHeUun7f5Vv3bteRHppHH/FMBQX/esFj/fuYfjyUKWGMo3VCvIP/V8bE9KcjHmRZrhIz2Z9oNsDA=="
+  "resolved" "http://npm.lumigame.com/engine.io-client/-/engine.io-client-3.5.2.tgz"
+  "version" "3.5.2"
   dependencies:
     "component-emitter" "~1.3.0"
     "component-inherit" "0.0.3"
@@ -3613,7 +3621,7 @@
     "parseqs" "0.0.6"
     "parseuri" "0.0.6"
     "ws" "~7.4.2"
-    "xmlhttprequest-ssl" "~1.5.4"
+    "xmlhttprequest-ssl" "~1.6.2"
     "yeast" "0.1.2"
 
 "engine.io-parser@~2.2.0":
@@ -4070,9 +4078,9 @@
     "readable-stream" "^2.0.4"
 
 "follow-redirects@^1.10.0":
-  "integrity" "sha512-0vRwd7RKQBTt+mgu87mtYeofLFZpTas2S9zY+jIeuLJMNvudIgF52nr19q40HOwH5RrhWIPuj9puybzSJiRrVg=="
-  "resolved" "http://npm.lumigame.com/follow-redirects/-/follow-redirects-1.14.0.tgz"
-  "version" "1.14.0"
+  "integrity" "sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg=="
+  "resolved" "http://npm.lumigame.com/follow-redirects/-/follow-redirects-1.14.1.tgz"
+  "version" "1.14.1"
 
 "follow-redirects@1.5.10":
   "integrity" "sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ=="
@@ -6742,9 +6750,9 @@
   "version" "0.3.2"
 
 "mongoose@*", "mongoose@^5.9.25", "mongoose@4.x || 5.x":
-  "integrity" "sha512-BniNwACn7uflK2h+M3juvyLH5nn9JDFgnB5KE2EwWFwSrRyhSpPnCtanRKJW3OtMCJyPccMIjtGZxHNW7JfnIw=="
-  "resolved" "http://npm.lumigame.com/mongoose/-/mongoose-5.12.7.tgz"
-  "version" "5.12.7"
+  "integrity" "sha512-+6Q8mvTsIHQkXBWmBGnEy93Gm0fjKIwV/AEIT23wXN3O4Pd3L/aZaJWrdOStcuE4b9SqXrs1QBnnR9MNqNZwrw=="
+  "resolved" "http://npm.lumigame.com/mongoose/-/mongoose-5.12.8.tgz"
+  "version" "5.12.8"
   dependencies:
     "@types/mongodb" "^3.5.27"
     "bson" "^1.1.4"
@@ -7288,6 +7296,11 @@
   "version" "0.9.0"
 
 "object-assign@^4.1.0":
+  "integrity" "sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM="
+  "resolved" "http://npm.lumigame.com/object-assign/-/object-assign-4.1.1.tgz"
+  "version" "4.1.1"
+
+"object-assign@^4":
   "integrity" "sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM="
   "resolved" "http://npm.lumigame.com/object-assign/-/object-assign-4.1.1.tgz"
   "version" "4.1.1"
@@ -8645,15 +8658,15 @@
     "axios" "^0.19.2"
     "openid-client" "^3.15.9"
 
-"sc-base-apis@^1.11.2":
-  "integrity" "sha512-5q7YlA2NZFT11CATbkZqE4ddoCjT5xdBFnBw8XS4TWeb34jqH5vw+BqMokgqe8i9TcjnbsA4ASG9nM4s/iZeoQ=="
-  "resolved" "http://npm.lumigame.com/sc-base-apis/-/sc-base-apis-1.11.2.tgz"
-  "version" "1.11.2"
+"sc-base-apis@1.11.3-beta.1":
+  "integrity" "sha512-VDwQg3MXFZNcHRdT5fqlg1t401z8LWa3U6Y+5DhiqE2HrkzXJjV3UWiqnP7L8494TcJrFnOMzD/DftWqMM70ag=="
+  "resolved" "http://npm.lumigame.com/sc-base-apis/-/sc-base-apis-1.11.3-beta.1.tgz"
+  "version" "1.11.3-beta.1"
   dependencies:
     "moment" "^2.27.0"
     "sc-api-client" "^1.3.0"
     "sc-base-database" "^1.8.2"
-    "sc-common" "^1.6.0"
+    "sc-common" "^1.6.1-beta.1"
 
 "sc-base-database@^1.8.2":
   "integrity" "sha512-AJMOZbnMjDlI9vL0bpiG93eR4krGaXp05JdUnvJ2andLU+T/Zpo3ZzIwBbbkA6jGSfNfJ4374Vxe9kFyk24jsQ=="
@@ -8674,15 +8687,27 @@
     "mongoose-long" "^0.3.0"
     "numeral" "^2.0.6"
 
-"sc-game-base@^1.20.3":
-  "integrity" "sha512-pIdyePXEsBEIZcCBPMwUDiNfYOJLv+OOWNXjhAnJ7xTFpG5Uj9vv5c0y7+jzOra3Iy02SbSVTtVUER5xYIvP1w=="
-  "resolved" "http://npm.lumigame.com/sc-game-base/-/sc-game-base-1.21.1.tgz"
-  "version" "1.21.1"
+"sc-common@^1.6.1-beta.1", "sc-common@1.6.1-beta.1":
+  "integrity" "sha512-rFTHAVZQBKnjILsSt8G1SJIS1EF0P2Espf1cWE1JiWsHBAUs63ka7K4X2OlJJ76w6MOVevfob6FUv7AZHJG7Sg=="
+  "resolved" "http://npm.lumigame.com/sc-common/-/sc-common-1.6.1-beta.1.tgz"
+  "version" "1.6.1-beta.1"
+  dependencies:
+    "@sentry/node" "^5.19.1"
+    "jsonwebtoken" "^8.5.1"
+    "jwks-rsa" "^1.8.1"
+    "mongoose-long" "^0.3.0"
+    "numeral" "^2.0.6"
+
+"sc-game-base@^1.21.2-beta.3":
+  "integrity" "sha512-BLWLES1AN+VAcq57rpx5FfoH0S0rUr1CDgzSnjXv2u0BjKgn30NAQQpboQLlDZhfSqTsemN2dnLHsTeDzTbQDg=="
+  "resolved" "http://npm.lumigame.com/sc-game-base/-/sc-game-base-1.21.2-beta.8.tgz"
+  "version" "1.21.2-beta.8"
   dependencies:
     "awilix" "^4.3.1"
     "axios" "^0.20.0"
     "body-parser" "^1.19.0"
     "chance" "^1.1.7"
+    "cors" "^2.8.5"
     "cron" "^1.8.2"
     "express" "^4.17.1"
     "helmet" "^3.23.3"
@@ -8690,9 +8715,9 @@
     "mongoose" "^5.9.25"
     "morgan" "^1.10.0"
     "openid-client" "^4.2.0"
-    "sc-base-apis" "^1.11.2"
+    "sc-base-apis" "1.11.3-beta.1"
     "sc-base-database" "^1.8.2"
-    "sc-common" "^1.6.0"
+    "sc-common" "1.6.1-beta.1"
     "socket.io" "^2.3.0"
 
 "sc-semantic-release@^1.1.0":
@@ -8700,14 +8725,14 @@
   "resolved" "http://npm.lumigame.com/sc-semantic-release/-/sc-semantic-release-1.2.0.tgz"
   "version" "1.2.0"
 
-"sc-slot-game-base@^1.0.3-beta.5":
-  "integrity" "sha512-E2IOlr+D2c53f9dwkuEizB2R6XGZHkIsNGcFP2H8+GDw5P1NZsvyx7CRFzHR33hDBR2ujZLC94zGX/dgZ04LrQ=="
-  "resolved" "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.0.3-beta.5.tgz"
-  "version" "1.0.3-beta.5"
+"sc-slot-game-base@^1.0.3-beta.6":
+  "integrity" "sha512-6vu3jfn7iRol+6EDVC8Tyuds43mfWmF6GWri12XHpb2B4o9Ape1kupUR+fxNbBUAVC+cJqz6xX4IKYh1lP5iNA=="
+  "resolved" "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.0.3-beta.6.tgz"
+  "version" "1.0.3-beta.6"
   dependencies:
     "chance" "^1.1.7"
     "lodash" "^4.17.20"
-    "sc-game-base" "^1.20.3"
+    "sc-game-base" "^1.21.2-beta.3"
 
 "semantic-release@^17.1.1":
   "integrity" "sha512-FrPUpqKobak39F/6HnxhBK6LdL2ZEHadz5qVDTIJ9qlJ6bw8BQ5sguZ2j0ewI0aqRcLf/u9LGy/kOnUy0v7NbQ=="
@@ -9991,7 +10016,7 @@
   dependencies:
     "builtins" "^1.0.3"
 
-"vary@~1.1.2":
+"vary@^1", "vary@~1.1.2":
   "integrity" "sha1-IpnwLG3tMNSllhsLn3RSShj2NPw="
   "resolved" "http://npm.lumigame.com/vary/-/vary-1.1.2.tgz"
   "version" "1.1.2"
@@ -10205,10 +10230,10 @@
   "resolved" "http://npm.lumigame.com/xmlchars/-/xmlchars-2.2.0.tgz"
   "version" "2.2.0"
 
-"xmlhttprequest-ssl@~1.5.4":
-  "integrity" "sha1-wodrBhaKrcQOV9l+gRkayPQ5iz4="
-  "resolved" "http://npm.lumigame.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.5.5.tgz"
-  "version" "1.5.5"
+"xmlhttprequest-ssl@~1.6.2":
+  "integrity" "sha512-tYOaldF/0BLfKuoA39QMwD4j2m8lq4DIncqj1yuNELX4vz9+z/ieG/vwmctjJce+boFHXstqhWnHSxc4W8f4qg=="
+  "resolved" "http://npm.lumigame.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.6.2.tgz"
+  "version" "1.6.2"
 
 "xtend@~4.0.1":
   "integrity" "sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ=="
