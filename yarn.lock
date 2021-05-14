@@ -8725,10 +8725,10 @@
   "resolved" "http://npm.lumigame.com/sc-semantic-release/-/sc-semantic-release-1.2.0.tgz"
   "version" "1.2.0"
 
-"sc-slot-game-base@^1.0.3-beta.10":
-  "integrity" "sha512-m6Rbrpep4COtZcqkDK0G6frjDXeDwPYBiKZmYE/Qpcd3/r1J2an3TVzkSSEAlGdGn7F9DIY7v8Fg1k5D1lrjHw=="
-  "resolved" "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.0.3-beta.10.tgz"
-  "version" "1.0.3-beta.10"
+"sc-slot-game-base@^1.0.3-beta.11":
+  "integrity" "sha512-MgMYxStH/wF9NJWIJjfIwWZJqjxjHo0yY/6ZrFsxcy8WA5cGbs1Mbi7puvLWOL/iISo6sQM/zkJJUZssHFEvFA=="
+  "resolved" "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.0.3-beta.11.tgz"
+  "version" "1.0.3-beta.11"
   dependencies:
     "chance" "^1.1.7"
     "lodash" "^4.17.20"
