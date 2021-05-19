@@ -42,7 +42,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://b78597c502a5448184eb372b122e8346@10.99.99.187:803/129",
+        sentryUrl: "http://58fc00e79ab34a3bab04a79038760cb8@10.99.99.187:803/8",
         logIdentifier: "fourguardians",
         env: "AWS",
     },

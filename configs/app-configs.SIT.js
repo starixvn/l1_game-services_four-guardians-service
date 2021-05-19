@@ -41,7 +41,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://ec25ef273c834a12b1661d9e48584166@10.99.99.187:800/218",
+        sentryUrl: "http://52368c4019044019885440599c180bda@10.99.99.187:800/24",
         logIdentifier: "fourguardians",
         env: "SIT",
     },

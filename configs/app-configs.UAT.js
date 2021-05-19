@@ -42,7 +42,7 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://d0fad0e7076e46dd9c0c4d829fb4b35d@10.99.99.187:800/219",
+        sentryUrl: "http://52368c4019044019885440599c180bda@10.99.99.187:800/24",
         logIdentifier: "fourguardians",
         env: "UAT",
     },
