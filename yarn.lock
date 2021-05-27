@@ -8687,7 +8687,7 @@
     "mongoose-long" "^0.3.0"
     "numeral" "^2.0.6"
 
-"sc-game-base@^1.22.1":
+"sc-game-base@^1.21.2-beta.17":
   "integrity" "sha512-2a3LBhXLgPCPwKsoo1AabzXaAcfbkmXfF2S5udkxvQ+tMbc5CYLTXKf8x8Qu12n9Q/HuW4Tz4WbP+OxCWsX97g=="
   "resolved" "http://npm.lumigame.com/sc-game-base/-/sc-game-base-1.22.1.tgz"
   "version" "1.22.1"
@@ -8714,14 +8714,14 @@
   "resolved" "http://npm.lumigame.com/sc-semantic-release/-/sc-semantic-release-1.2.0.tgz"
   "version" "1.2.0"
 
-"sc-slot-game-base@^1.0.3":
-  "integrity" "sha512-mEKzekhyWf3jyUj3mEnWU0uXEWFJlbF9MRlIx3y7mKJezL/3vBLtEw2D7rFn24nITlBT5fhc5DSCanN+6Z/UZA=="
-  "resolved" "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.0.3.tgz"
-  "version" "1.0.3"
+"sc-slot-game-base@^1.0.4-beta.1":
+  "integrity" "sha512-fIT3MDraeFeM3SGbyXO6kXrsJ96jbN0Dc7MwdihjBUm20S6n/uAlaiFbR8z9UkFktUIcYUfEXx+r9pE257IicQ=="
+  "resolved" "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.0.4-beta.1.tgz"
+  "version" "1.0.4-beta.1"
   dependencies:
     "chance" "^1.1.7"
     "lodash" "^4.17.20"
-    "sc-game-base" "^1.22.1"
+    "sc-game-base" "^1.21.2-beta.17"
 
 "semantic-release@^17.1.1":
   "integrity" "sha512-FrPUpqKobak39F/6HnxhBK6LdL2ZEHadz5qVDTIJ9qlJ6bw8BQ5sguZ2j0ewI0aqRcLf/u9LGy/kOnUy0v7NbQ=="
