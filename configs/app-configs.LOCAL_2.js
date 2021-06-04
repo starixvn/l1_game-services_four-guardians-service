@@ -52,7 +52,7 @@ export default {
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     enableCorsWs: true,
-    corsUrls: ["http://localhost:7456", "http://localhost:7000", "http://l1-games2.lumigame.com", "http://l1-admin2.lumigame.com"],
+    corsUrls: ["http://localhost:7456", "http://localhost:7000", "https://l1-games2.lumigame.com", "https://l1-admin2.lumigame.com"],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 127,
 };
