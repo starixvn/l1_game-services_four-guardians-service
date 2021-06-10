@@ -55,8 +55,8 @@ export default {
         "http://localhost:7456",
         "http://10.5.10.14:7456",
         "http://localhost:7000",
-        "http://games.lumigame.com",
-        "http://admin.lumigame.com",
+        "https://games.lumigame.com",
+        "https://admin.lumigame.com",
     ],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 127,
