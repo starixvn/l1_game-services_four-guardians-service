@@ -1001,6 +1001,15 @@
   "resolved" "http://npm.lumigame.com/@istanbuljs%2fschema/-/schema-0.1.3.tgz"
   "version" "0.1.3"
 
+"@jest/console@^24.9.0":
+  "integrity" "sha512-Zuj6b8TnKXi3q4ymac8EQfc3ea/uhLeCGThFqXeC8H9/raaH8ARPUTdId+XyGd03Z4In0/VjD2OYFcBF09fNLQ=="
+  "resolved" "http://npm.lumigame.com/@jest%2fconsole/-/console-24.9.0.tgz"
+  "version" "24.9.0"
+  dependencies:
+    "@jest/source-map" "^24.9.0"
+    "chalk" "^2.0.1"
+    "slash" "^2.0.0"
+
 "@jest/console@^26.6.2":
   "integrity" "sha512-IY1R2i2aLsLr7Id3S6p2BA82GNWryt4oSvEXLAKc+L2zdi89dSkE8xC1C+0kpATG4JhBJREnQOH7/zmccM2B0g=="
   "resolved" "http://npm.lumigame.com/@jest%2fconsole/-/console-26.6.2.tgz"
@@ -1110,6 +1119,15 @@
   optionalDependencies:
     "node-notifier" "^8.0.0"
 
+"@jest/source-map@^24.9.0":
+  "integrity" "sha512-/Xw7xGlsZb4MJzNDgB7PW5crou5JqWiBQaz6xyPd3ArOg2nfn/PunV8+olXbbEZzNl591o5rWKE9BRDaFAuIBg=="
+  "resolved" "http://npm.lumigame.com/@jest%2fsource-map/-/source-map-24.9.0.tgz"
+  "version" "24.9.0"
+  dependencies:
+    "callsites" "^3.0.0"
+    "graceful-fs" "^4.1.15"
+    "source-map" "^0.6.0"
+
 "@jest/source-map@^26.6.2":
   "integrity" "sha512-YwYcCwAnNmOVsZ8mr3GfnzdXDAl4LaenZP5z+G0c8bzC9/dugL8zRmxZzdoTl4IaS3CryS1uWnROLPFmb6lVvA=="
   "resolved" "http://npm.lumigame.com/@jest%2fsource-map/-/source-map-26.6.2.tgz"
@@ -1118,6 +1136,15 @@
     "callsites" "^3.0.0"
     "graceful-fs" "^4.2.4"
     "source-map" "^0.6.0"
+
+"@jest/test-result@^24.9.0":
+  "integrity" "sha512-XEFrHbBonBJ8dGp2JmF8kP/nQI/ImPpygKHwQ/SY+es59Z3L5PI4Qb9TQQMAEeYsThG1xF0k6tmG0tIKATNiiA=="
+  "resolved" "http://npm.lumigame.com/@jest%2ftest-result/-/test-result-24.9.0.tgz"
+  "version" "24.9.0"
+  dependencies:
+    "@jest/console" "^24.9.0"
+    "@jest/types" "^24.9.0"
+    "@types/istanbul-lib-coverage" "^2.0.0"
 
 "@jest/test-result@^26.6.2":
   "integrity" "sha512-5O7H5c/7YlojphYNrK02LlDIV2GNPYisKwHm2QTKjNZeEzezCbwYs9swJySv2UfPMyZ0VdsmMv7jIlD/IKYQpQ=="
@@ -1160,6 +1187,15 @@
     "slash" "^3.0.0"
     "source-map" "^0.6.1"
     "write-file-atomic" "^3.0.0"
+
+"@jest/types@^24.9.0":
+  "integrity" "sha512-XKK7ze1apu5JWQ5eZjHITP66AX+QsLlbaJRBGYr8pNzwcAE2JVkwnf0yqjHTsDRcjR0mujy/NmZMXw5kl+kGBw=="
+  "resolved" "http://npm.lumigame.com/@jest%2ftypes/-/types-24.9.0.tgz"
+  "version" "24.9.0"
+  dependencies:
+    "@types/istanbul-lib-coverage" "^2.0.0"
+    "@types/istanbul-reports" "^1.1.1"
+    "@types/yargs" "^13.0.0"
 
 "@jest/types@^26.6.2":
   "integrity" "sha512-fC6QCp7Sc5sX6g8Tvbmj4XUTbyrik0akgRy03yjXbQaBWWNWGE7SGtJk98m0N8nzegD/7SggrUlivxo5ax4KWQ=="
@@ -1665,6 +1701,14 @@
   dependencies:
     "@types/istanbul-lib-coverage" "*"
 
+"@types/istanbul-reports@^1.1.1":
+  "integrity" "sha512-P/W9yOX/3oPZSpaYOCQzGqgCQRXn0FFO/V8bWrCQs+wLmvVVxk6CRBXALEvNs9OHIatlnlFokfhuDo2ug01ciw=="
+  "resolved" "http://npm.lumigame.com/@types%2fistanbul-reports/-/istanbul-reports-1.1.2.tgz"
+  "version" "1.1.2"
+  dependencies:
+    "@types/istanbul-lib-coverage" "*"
+    "@types/istanbul-lib-report" "*"
+
 "@types/istanbul-reports@^3.0.0":
   "integrity" "sha512-nwKNbvnwJ2/mndE9ItP/zc2TCzw6uuodnF4EHYWD+gCQDVBuRQL5UzbZD0/ezy1iKsFU2ZQiDqg4M9dN4+wZgA=="
   "resolved" "http://npm.lumigame.com/@types%2fistanbul-reports/-/istanbul-reports-3.0.0.tgz"
@@ -1747,6 +1791,11 @@
     "@types/mime" "^1"
     "@types/node" "*"
 
+"@types/stack-utils@^1.0.1":
+  "integrity" "sha512-l42BggppR6zLmpfU6fq9HEa2oGPEI8yrSPL3GITjfRInppYFahObbIQOQK3UGxEnyQpltZLaPe75046NOZQikw=="
+  "resolved" "http://npm.lumigame.com/@types%2fstack-utils/-/stack-utils-1.0.1.tgz"
+  "version" "1.0.1"
+
 "@types/stack-utils@^2.0.0":
   "integrity" "sha512-RJJrrySY7A8havqpGObOB4W92QXKJo63/jFLLgpvOtsGUqbQZ9Sbgl35KMm1DjC6j7AvmmU2bIno+3IyEaemaw=="
   "resolved" "http://npm.lumigame.com/@types%2fstack-utils/-/stack-utils-2.0.0.tgz"
@@ -1761,6 +1810,13 @@
   "integrity" "sha512-37RSHht+gzzgYeobbG+KWryeAW8J33Nhr69cjTqSYymXVZEN9NbRYWoYlRtDhHKPVT1FyNKwaTPC1NynKZpzRA=="
   "resolved" "http://npm.lumigame.com/@types%2fyargs-parser/-/yargs-parser-20.2.0.tgz"
   "version" "20.2.0"
+
+"@types/yargs@^13.0.0":
+  "integrity" "sha512-NRqD6T4gktUrDi1o1wLH3EKC1o2caCr7/wR87ODcbVITQF106OM3sFN92ysZ++wqelOd1CTzatnOBRDYYG6wGQ=="
+  "resolved" "http://npm.lumigame.com/@types%2fyargs/-/yargs-13.0.11.tgz"
+  "version" "13.0.11"
+  dependencies:
+    "@types/yargs-parser" "*"
 
 "@types/yargs@^15.0.0":
   "integrity" "sha512-kQ5JNTrbDv3Rp5X2n/iUu37IJBDU2gsZ5R/g1/KHOOEc5IKfUFjXT6DENPGduh08I/pamwtEq4oul7gUqKTQDQ=="
@@ -1884,6 +1940,11 @@
   "integrity" "sha1-7QMXwyIGT3lGbAKWa922Bas32Zg="
   "resolved" "http://npm.lumigame.com/ansi-regex/-/ansi-regex-3.0.0.tgz"
   "version" "3.0.0"
+
+"ansi-regex@^4.0.0":
+  "integrity" "sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p/rmMueb7tWZjQ1rx4Loy1ArBggoqGpfqqdI4rondg=="
+  "resolved" "http://npm.lumigame.com/ansi-regex/-/ansi-regex-4.1.0.tgz"
+  "version" "4.1.0"
 
 "ansi-regex@^4.1.0":
   "integrity" "sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p/rmMueb7tWZjQ1rx4Loy1ArBggoqGpfqqdI4rondg=="
@@ -2590,17 +2651,10 @@
   "resolved" "http://npm.lumigame.com/caseless/-/caseless-0.12.0.tgz"
   "version" "0.12.0"
 
-"chalk@^2.0.0", "chalk@^2.3.2":
+"chalk@^2.0.0", "chalk@^2.0.1", "chalk@^2.3.2":
   "integrity" "sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ=="
   "resolved" "http://npm.lumigame.com/chalk/-/chalk-2.4.2.tgz"
   "version" "2.4.2"
-  dependencies:
-    "ansi-styles" "^3.2.1"
-    "escape-string-regexp" "^1.0.5"
-    "supports-color" "^5.3.0"
-
-"chalk@^2.0.1":
-  "version" "2.4.1"
   dependencies:
     "ansi-styles" "^3.2.1"
     "escape-string-regexp" "^1.0.5"
@@ -3475,6 +3529,11 @@
     "asap" "^2.0.0"
     "wrappy" "1"
 
+"diff-sequences@^24.9.0":
+  "integrity" "sha512-Dj6Wk3tWyTE+Fo1rW8v0Xhwk80um6yFYKbuAxc9c3EZxIHFDYwbi34Uk42u1CdnIiVorvt4RmlSDjIPyzGC2ew=="
+  "resolved" "http://npm.lumigame.com/diff-sequences/-/diff-sequences-24.9.0.tgz"
+  "version" "24.9.0"
+
 "diff-sequences@^26.6.2":
   "integrity" "sha512-Mv/TDa3nZ9sbc5soK+OoA74BsS3mL37yixCvUAQkiuA4Wz6YtwP/K47n2rv2ovzHZvoiQeA5FTQOschKkEwB0Q=="
   "resolved" "http://npm.lumigame.com/diff-sequences/-/diff-sequences-26.6.2.tgz"
@@ -3850,6 +3909,18 @@
     "regex-not" "^1.0.0"
     "snapdragon" "^0.8.1"
     "to-regex" "^3.0.1"
+
+"expect@^24.1.0":
+  "integrity" "sha512-wvVAx8XIol3Z5m9zvZXiyZOQ+sRJqNTIm6sGjdWlaZIeupQGO3WbYI+15D/AmEwZywL6wtJkbAbJtzkOfBuR0Q=="
+  "resolved" "http://npm.lumigame.com/expect/-/expect-24.9.0.tgz"
+  "version" "24.9.0"
+  dependencies:
+    "@jest/types" "^24.9.0"
+    "ansi-styles" "^3.2.0"
+    "jest-get-type" "^24.9.0"
+    "jest-matcher-utils" "^24.9.0"
+    "jest-message-util" "^24.9.0"
+    "jest-regex-util" "^24.9.0"
 
 "expect@^26.6.2":
   "integrity" "sha512-9/hlOBkQl2l/PLHJx6JjoDF6xPKcJEsUlWKb23rKE7KzeDqUZKXKNMW27KIue5JMdBV9HgmoJPcc8HtO85t9IA=="
@@ -4474,10 +4545,10 @@
     "to-readable-stream" "^1.0.0"
     "url-parse-lax" "^3.0.0"
 
-"graceful-fs@^4.1.11", "graceful-fs@^4.1.15", "graceful-fs@^4.2.2":
+"graceful-fs@^4.1.11", "graceful-fs@^4.2.2":
   "version" "4.2.4"
 
-"graceful-fs@^4.1.2", "graceful-fs@^4.1.6", "graceful-fs@^4.2.0", "graceful-fs@^4.2.4":
+"graceful-fs@^4.1.15", "graceful-fs@^4.1.2", "graceful-fs@^4.1.6", "graceful-fs@^4.2.0", "graceful-fs@^4.2.4":
   "integrity" "sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ=="
   "resolved" "http://npm.lumigame.com/graceful-fs/-/graceful-fs-4.2.6.tgz"
   "version" "4.2.6"
@@ -5400,6 +5471,16 @@
     "micromatch" "^4.0.2"
     "pretty-format" "^26.6.2"
 
+"jest-diff@^24.9.0":
+  "integrity" "sha512-qMfrTs8AdJE2iqrTp0hzh7kTd2PQWrsFyj9tORoKmu32xjPjeE4NyjVRDz8ybYwqS2ik8N4hsIpiVTyFeo2lBQ=="
+  "resolved" "http://npm.lumigame.com/jest-diff/-/jest-diff-24.9.0.tgz"
+  "version" "24.9.0"
+  dependencies:
+    "chalk" "^2.0.1"
+    "diff-sequences" "^24.9.0"
+    "jest-get-type" "^24.9.0"
+    "pretty-format" "^24.9.0"
+
 "jest-diff@^26.6.2":
   "integrity" "sha512-6m+9Z3Gv9wN0WFVasqjCL/06+EFCMTqDEUl/b87HYK2rAPTyfz4ZIuSlPhY51PIQRWx5TaxeF1qmXKe9gfN3sA=="
   "resolved" "http://npm.lumigame.com/jest-diff/-/jest-diff-26.6.2.tgz"
@@ -5452,6 +5533,25 @@
     "@types/node" "*"
     "jest-mock" "^26.6.2"
     "jest-util" "^26.6.2"
+
+"jest-extended@^0.11.5":
+  "integrity" "sha512-3RsdFpLWKScpsLD6hJuyr/tV5iFOrw7v6YjA3tPdda9sJwoHwcMROws5gwiIZfcwhHlJRwFJB2OUvGmF3evV/Q=="
+  "resolved" "http://npm.lumigame.com/jest-extended/-/jest-extended-0.11.5.tgz"
+  "version" "0.11.5"
+  dependencies:
+    "expect" "^24.1.0"
+    "jest-get-type" "^22.4.3"
+    "jest-matcher-utils" "^22.0.0"
+
+"jest-get-type@^22.4.3":
+  "integrity" "sha512-/jsz0Y+V29w1chdXVygEKSz2nBoHoYqNShPe+QgxSNjAuP1i8+k4LbQNrfoliKej0P45sivkSCh7yiD6ubHS3w=="
+  "resolved" "http://npm.lumigame.com/jest-get-type/-/jest-get-type-22.4.3.tgz"
+  "version" "22.4.3"
+
+"jest-get-type@^24.9.0":
+  "integrity" "sha512-lUseMzAley4LhIcpSP9Jf+fTrQ4a1yHQwLNeeVa2cEmbCGeoZAtYPOIv8JaxLD/sUpKxetKGP+gsHl8f8TSj8Q=="
+  "resolved" "http://npm.lumigame.com/jest-get-type/-/jest-get-type-24.9.0.tgz"
+  "version" "24.9.0"
 
 "jest-get-type@^26.3.0":
   "integrity" "sha512-TpfaviN1R2pQWkIihlfEanwOXK0zcxrKEE4MlU6Tn7keoXdN6/3gK/xl0yEh8DOunn5pOVGKf8hB4R9gVh04ig=="
@@ -5511,6 +5611,25 @@
     "jest-get-type" "^26.3.0"
     "pretty-format" "^26.6.2"
 
+"jest-matcher-utils@^22.0.0":
+  "integrity" "sha512-lsEHVaTnKzdAPR5t4B6OcxXo9Vy4K+kRRbG5gtddY8lBEC+Mlpvm1CJcsMESRjzUhzkz568exMV1hTB76nAKbA=="
+  "resolved" "http://npm.lumigame.com/jest-matcher-utils/-/jest-matcher-utils-22.4.3.tgz"
+  "version" "22.4.3"
+  dependencies:
+    "chalk" "^2.0.1"
+    "jest-get-type" "^22.4.3"
+    "pretty-format" "^22.4.3"
+
+"jest-matcher-utils@^24.9.0":
+  "integrity" "sha512-OZz2IXsu6eaiMAwe67c1T+5tUAtQyQx27/EMEkbFAGiw52tB9em+uGbzpcgYVpA8wl0hlxKPZxrly4CXU/GjHA=="
+  "resolved" "http://npm.lumigame.com/jest-matcher-utils/-/jest-matcher-utils-24.9.0.tgz"
+  "version" "24.9.0"
+  dependencies:
+    "chalk" "^2.0.1"
+    "jest-diff" "^24.9.0"
+    "jest-get-type" "^24.9.0"
+    "pretty-format" "^24.9.0"
+
 "jest-matcher-utils@^26.6.2":
   "integrity" "sha512-llnc8vQgYcNqDrqRDXWwMr9i7rS5XFiCwvh6DTP7Jqa2mqpcCBBlpCbn+trkG0KNhPu/h8rzyBkriOtBstvWhw=="
   "resolved" "http://npm.lumigame.com/jest-matcher-utils/-/jest-matcher-utils-26.6.2.tgz"
@@ -5520,6 +5639,20 @@
     "jest-diff" "^26.6.2"
     "jest-get-type" "^26.3.0"
     "pretty-format" "^26.6.2"
+
+"jest-message-util@^24.9.0":
+  "integrity" "sha512-oCj8FiZ3U0hTP4aSui87P4L4jC37BtQwUMqk+zk/b11FR19BJDeZsZAvIHutWnmtw7r85UmR3CEWZ0HWU2mAlw=="
+  "resolved" "http://npm.lumigame.com/jest-message-util/-/jest-message-util-24.9.0.tgz"
+  "version" "24.9.0"
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@jest/test-result" "^24.9.0"
+    "@jest/types" "^24.9.0"
+    "@types/stack-utils" "^1.0.1"
+    "chalk" "^2.0.1"
+    "micromatch" "^3.1.10"
+    "slash" "^2.0.0"
+    "stack-utils" "^1.0.1"
 
 "jest-message-util@^26.6.2":
   "integrity" "sha512-rGiLePzQ3AzwUshu2+Rn+UMFk0pHN58sOG+IaJbk5Jxuqo3NYO1U2/MIR4S1sKgsoYSXSzdtSa0TgrmtUwEbmA=="
@@ -5536,6 +5669,14 @@
     "slash" "^3.0.0"
     "stack-utils" "^2.0.2"
 
+"jest-micro-auto-stub@^1.0.6":
+  "integrity" "sha512-608rrjbLAXlnOPDNvwRbJHrNjVOF0At43k4QFanuSYNVWsH0yxFOPNazVtxdZr5ZD5Cbo8gNuQGw3gEA7YRvFQ=="
+  "resolved" "http://npm.lumigame.com/jest-micro-auto-stub/-/jest-micro-auto-stub-1.0.6.tgz"
+  "version" "1.0.6"
+  dependencies:
+    "jest" "^26.6.3"
+    "mongoose" "^5.9.25"
+
 "jest-mock@^26.6.2":
   "integrity" "sha512-YyFjePHHp1LzpzYcmgqkJ0nm0gg/lJx2aZFzFy1S6eUqNjXsOqTK10zNRff2dNfssgokjkG65OlWNcIlgd3zew=="
   "resolved" "http://npm.lumigame.com/jest-mock/-/jest-mock-26.6.2.tgz"
@@ -5548,6 +5689,11 @@
   "integrity" "sha512-olV41bKSMm8BdnuMsewT4jqlZ8+3TCARAXjZGT9jcoSnrfUnRCqnMoF9XEeoWjbzObpqF9dRhHQj0Xb9QdF6/w=="
   "resolved" "http://npm.lumigame.com/jest-pnp-resolver/-/jest-pnp-resolver-1.2.2.tgz"
   "version" "1.2.2"
+
+"jest-regex-util@^24.9.0":
+  "integrity" "sha512-05Cmb6CuxaA+Ys6fjr3PhvV3bGQmO+2p2La4hFbU+W5uOc479f7FdLXUWXw4pYMAhhSZIuKHwSXSu6CsSBAXQA=="
+  "resolved" "http://npm.lumigame.com/jest-regex-util/-/jest-regex-util-24.9.0.tgz"
+  "version" "24.9.0"
 
 "jest-regex-util@^26.0.0":
   "integrity" "sha512-Gv3ZIs/nA48/Zvjrl34bf+oD76JHiGDUxNOVgUjh3j890sblXryjY4rss71fPtD/njchl6PSE2hIhvyWa1eT0A=="
@@ -5666,6 +5812,13 @@
     "pretty-format" "^26.6.2"
     "semver" "^7.3.2"
 
+"jest-sonar-reporter@^2.0.0":
+  "integrity" "sha512-ZervDCgEX5gdUbdtWsjdipLN3bKJwpxbvhkYNXTAYvAckCihobSLr9OT/IuyNIRT1EZMDDwR6DroWtrq+IL64w=="
+  "resolved" "http://npm.lumigame.com/jest-sonar-reporter/-/jest-sonar-reporter-2.0.0.tgz"
+  "version" "2.0.0"
+  dependencies:
+    "xml" "^1.0.1"
+
 "jest-util@^26.6.2":
   "integrity" "sha512-MDW0fKfsn0OI7MS7Euz6h8HNDXVQ0gaM9uW6RjfDmd1DAFcaxX9OqIakHIqhbnmF08Cf2DLDG+ulq8YQQ0Lp0Q=="
   "resolved" "http://npm.lumigame.com/jest-util/-/jest-util-26.6.2.tgz"
@@ -5712,7 +5865,7 @@
     "merge-stream" "^2.0.0"
     "supports-color" "^7.0.0"
 
-"jest@^26.4.2":
+"jest@^26.6.3":
   "integrity" "sha512-lGS5PXGAzR4RF7V5+XObhqz2KZIDUA1yD0DG6pBVmy10eh0ZIXQImRuzocsI/N2XZ1GrLFwTS27In2i2jlpq1Q=="
   "resolved" "http://npm.lumigame.com/jest/-/jest-26.6.3.tgz"
   "version" "26.6.3"
@@ -6553,6 +6706,25 @@
   "integrity" "sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4="
   "resolved" "http://npm.lumigame.com/methods/-/methods-1.1.2.tgz"
   "version" "1.1.2"
+
+"micromatch@^3.1.10":
+  "integrity" "sha512-MWikgl9n9M3w+bpsY3He8L+w9eF9338xRl8IAO5viDizwSzziFEyUzo2xrrloB64ADbTf8uA8vRqqttDTOmccg=="
+  "resolved" "http://npm.lumigame.com/micromatch/-/micromatch-3.1.10.tgz"
+  "version" "3.1.10"
+  dependencies:
+    "arr-diff" "^4.0.0"
+    "array-unique" "^0.3.2"
+    "braces" "^2.3.1"
+    "define-property" "^2.0.2"
+    "extend-shallow" "^3.0.2"
+    "extglob" "^2.0.4"
+    "fragment-cache" "^0.2.1"
+    "kind-of" "^6.0.2"
+    "nanomatch" "^1.2.9"
+    "object.pick" "^1.3.0"
+    "regex-not" "^1.0.0"
+    "snapdragon" "^0.8.1"
+    "to-regex" "^3.0.2"
 
 "micromatch@^3.1.4":
   "integrity" "sha512-MWikgl9n9M3w+bpsY3He8L+w9eF9338xRl8IAO5viDizwSzziFEyUzo2xrrloB64ADbTf8uA8vRqqttDTOmccg=="
@@ -7861,6 +8033,24 @@
   "resolved" "http://npm.lumigame.com/prepend-http/-/prepend-http-2.0.0.tgz"
   "version" "2.0.0"
 
+"pretty-format@^22.4.3":
+  "integrity" "sha512-S4oT9/sT6MN7/3COoOy+ZJeA92VmOnveLHgrwBE3Z1W5N9S2A1QGNYiE1z75DAENbJrXXUb+OWXhpJcg05QKQQ=="
+  "resolved" "http://npm.lumigame.com/pretty-format/-/pretty-format-22.4.3.tgz"
+  "version" "22.4.3"
+  dependencies:
+    "ansi-regex" "^3.0.0"
+    "ansi-styles" "^3.2.0"
+
+"pretty-format@^24.9.0":
+  "integrity" "sha512-00ZMZUiHaJrNfk33guavqgvfJS30sLYf0f8+Srklv0AMPodGGHcoHgksZ3OThYnIvOd+8yMCn0YiEOogjlgsnA=="
+  "resolved" "http://npm.lumigame.com/pretty-format/-/pretty-format-24.9.0.tgz"
+  "version" "24.9.0"
+  dependencies:
+    "@jest/types" "^24.9.0"
+    "ansi-regex" "^4.0.0"
+    "ansi-styles" "^3.2.0"
+    "react-is" "^16.8.4"
+
 "pretty-format@^26.6.2":
   "integrity" "sha512-7AeGuCYNGmycyQbCqd/3PWH4eOoX/OiCa0uphp57NVTeAGdJGaAliecxwBDHYQCIvrW7aDBZCYeNTP/WX69mkg=="
   "resolved" "http://npm.lumigame.com/pretty-format/-/pretty-format-26.6.2.tgz"
@@ -8103,6 +8293,11 @@
     "ini" "~1.3.0"
     "minimist" "^1.2.0"
     "strip-json-comments" "~2.0.1"
+
+"react-is@^16.8.4":
+  "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
+  "resolved" "http://npm.lumigame.com/react-is/-/react-is-16.13.1.tgz"
+  "version" "16.13.1"
 
 "react-is@^17.0.1":
   "integrity" "sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA=="
@@ -8967,6 +9162,11 @@
   "resolved" "http://npm.lumigame.com/sisteransi/-/sisteransi-1.0.5.tgz"
   "version" "1.0.5"
 
+"slash@^2.0.0":
+  "integrity" "sha512-ZYKh3Wh2z1PpEXWr0MpSBZ0V6mZHAQfYevttO11c51CaWjGTaadiKZ+wVt1PbMlDV5qhMFslpZCemhwOK7C89A=="
+  "resolved" "http://npm.lumigame.com/slash/-/slash-2.0.0.tgz"
+  "version" "2.0.0"
+
 "slash@^3.0.0":
   "integrity" "sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q=="
   "resolved" "http://npm.lumigame.com/slash/-/slash-3.0.0.tgz"
@@ -9253,6 +9453,13 @@
   "version" "6.0.1"
   dependencies:
     "figgy-pudding" "^3.5.1"
+
+"stack-utils@^1.0.1":
+  "integrity" "sha512-KZiTzuV3CnSnSvgMRrARVCj+Ht7rMbauGDK0LdVFRGyenwdylpajAp4Q0i6SX8rEmbTpMMf6ryq2gb8pPq2WgQ=="
+  "resolved" "http://npm.lumigame.com/stack-utils/-/stack-utils-1.0.5.tgz"
+  "version" "1.0.5"
+  dependencies:
+    "escape-string-regexp" "^2.0.0"
 
 "stack-utils@^2.0.2":
   "integrity" "sha512-gL//fkxfWUsIlFL2Tl42Cl6+HFALEaB1FU76I/Fy+oZjRreP7OPMXFlGbxM7NQsI0ZpUfw76sHnv0WNYuTb7Iw=="
@@ -10242,6 +10449,11 @@
   "integrity" "sha512-A5CUptxDsvxKJEU3yO6DuWBSJz/qizqzJKOMIfUJHETbBw/sFaDxgd6fxm1ewUaM0jZ444Fc5vC5ROYurg/4Pw=="
   "resolved" "http://npm.lumigame.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz"
   "version" "3.0.0"
+
+"xml@^1.0.1":
+  "integrity" "sha1-eLpyAgApxbyHuKgaPPzXS0ovweU="
+  "resolved" "http://npm.lumigame.com/xml/-/xml-1.0.1.tgz"
+  "version" "1.0.1"
 
 "xmlchars@^2.2.0":
   "integrity" "sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw=="
