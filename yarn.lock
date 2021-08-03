@@ -4289,6 +4289,11 @@
   "resolved" "http://npm.lumigame.com/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
 
+"fsevents@^2.1.2", "fsevents@~2.3.1":
+  "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
+  "resolved" "http://npm.lumigame.com/fsevents/-/fsevents-2.3.2.tgz"
+  "version" "2.3.2"
+
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
   "resolved" "http://npm.lumigame.com/function-bind/-/function-bind-1.1.1.tgz"
@@ -8922,10 +8927,10 @@
   "resolved" "http://npm.lumigame.com/sc-semantic-release/-/sc-semantic-release-1.2.0.tgz"
   "version" "1.2.0"
 
-"sc-slot-game-base@~1.0.4":
-  "integrity" "sha512-gy5iy3T1xR0A7TdLc8SnYtE3MuZD44ZBcnUZfIKBtVGU2AlCYMIDsvgG2Q4vhH4ZUvdvtBZc/z4rnwMk+FaqnA=="
-  "resolved" "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.0.4.tgz"
-  "version" "1.0.4"
+"sc-slot-game-base@~1.0.6":
+  "integrity" "sha512-LuuAXJ4RL0TeZ6SE2/erDCs/i8zm6qz4EA1mq3/xOGc9ZAag1PTgb8NYCk19gHzAGDztPfJ/2FmvrGhwMqtCcA=="
+  "resolved" "http://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.0.6.tgz"
+  "version" "1.0.6"
   dependencies:
     "chance" "^1.1.7"
     "lodash" "^4.17.20"
