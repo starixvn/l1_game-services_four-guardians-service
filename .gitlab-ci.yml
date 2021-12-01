@@ -1,3 +1,6 @@
+variables:
+  SMOKE_PRODUCT_NAME: FourGuardians
+  
 include:
   - project: "ci/repos-ci/pentagon_l1_four_guardians_service"
     ref: master
