@@ -7,6 +7,7 @@ jest.mock(
     () => {
         return {
             asValue: jest.fn((t) => t),
+            asClass: () => ({ singleton: () => ({ proxy: () => {} }) }),
             InjectionMode: jest.fn(() => {}),
             createContainer: jest.fn(() => {}),
         };
@@ -42,6 +43,38 @@ describe("service-container-registry", () => {
                 roundsRepository: expect.any(Function),
                 famesRepository: expect.any(Function),
                 freeSpinsRepository: expect.any(Function),
+            });
+        });
+    });
+
+    describe("registerConsumers", () => {
+        it("should register correct Model", () => {
+            // arrange
+            const serviceContainerRegistry = new FourGuardiansContainerRegistry(defaultInjectionMode);
+            serviceContainerRegistry.container = { register: jest.fn() };
+
+            // act
+            serviceContainerRegistry.registerConsumers();
+
+            //assert
+            expect(serviceContainerRegistry.container.register).toBeCalledWith({
+                userSignInConsumer: expect.any(Object),
+            });
+        });
+    });
+
+    describe("registerValidators", () => {
+        it("should register correct Model", () => {
+            // arrange
+            const serviceContainerRegistry = new FourGuardiansContainerRegistry(defaultInjectionMode);
+            serviceContainerRegistry.container = { register: jest.fn() };
+
+            // act
+            serviceContainerRegistry.registerValidators();
+
+            //assert
+            expect(serviceContainerRegistry.container.register).toBeCalledWith({
+                playGamePermissionValidator: expect.any(Object),
             });
         });
     });
