@@ -14,10 +14,6 @@ export default {
         hitJackpotTimeout: 200000,
         enableApiLogs: true,
     },
-    userServiceSettings: {
-        url: "https://l1-proxy.lumigame.com/user",
-        requestTimeout: 10000,
-    },
     socketOptions: {
         pingInterval: 60 * 1000,
         pingTimeout: 60 * 1000,
@@ -40,7 +36,15 @@ export default {
         env: "LOCAL",
     },
     authenticateSettings: {
+        url: "http://auth.lumigame.com",
+        id: "game-services",
+        secret: "gameservices@20luminet&",
+        requestTimeout: 10000,
+        useAuthenticate: false,
         audiences: ["api", "admin-api"],
+    },
+    userServiceSettings: {
+        url: "http://127.0.0.1:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     enableCorsWs: false,

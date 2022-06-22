@@ -14,10 +14,6 @@ export default {
         hitJackpotTimeout: 200000,
         enabledApiLogs: true,
     },
-    userServiceSettings: {
-        url: "http://localhost:8004/api",
-        requestTimeout: 10000,
-    },
     socketOptions: {
         pingInterval: 60 * 1000,
         pingTimeout: 60 * 1000,
@@ -41,7 +37,15 @@ export default {
         env: "AWS",
     },
     authenticateSettings: {
+        url: "http://l1_auth_api_AWS:5000",
+        id: "game-services",
+        secret: "gameservices@20luminet&",
+        requestTimeout: 10000,
+        useAuthenticate: true,
         audiences: ["api", "admin-api"],
+    },
+    userServiceSettings: {
+        url: "http://localhost:8004/api",
     },
     adminSecretKey: "asWDEer4yGdgsdqR4uqmKQZgh",
     enableCorsWs: true,
