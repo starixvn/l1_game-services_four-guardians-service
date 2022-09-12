@@ -23,7 +23,7 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend@10.10.50.14:27106/?replicaSet=L1pppLocal",
+        url: "mongodb://lmn_backend:LmnBackend@10.10.50.14:27106/?replicaSet=L1pppLocal&appName=FourGuardians",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
