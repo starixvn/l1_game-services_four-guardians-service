@@ -9,20 +9,21 @@ export default {
             secret: "gameserver@20luminet&",
         },
         useAuthenticate: true,
-        placeBetTimeout: 4500,
+        placeBetTimeout: 4000,
         requestTimeout: 10000, // 10s
         hitJackpotTimeout: 200000,
         enabledApiLogs: true,
     },
-    mainServerApiSettings: {
-        url: "http://l2_games_server_AWS:5000/api",
-        auth: {
-            url: "http://l2_auth_api_AWS:5000",
-            id: "game-services",
-            secret: "gameservices@20luminet&",
-        },
+    authenticateSettings: {
+        url: "http://l2_auth_api_AWS:5000",
+        id: "game-services",
+        secret: "gameservices@20luminet&",
         requestTimeout: 10000,
         useAuthenticate: true,
+        audiences: ["api", "admin-api"],
+    },
+    userServiceSettings: {
+        url: "http://localhost:8004/api",
     },
     notificationApiSettings: {
         url: "http://l2_notification_service_AWS:5000/api",

@@ -11,9 +11,20 @@ export default {
 
         useAuthenticate: true,
         requestTimeout: 10000,
-        placeBetTimeout: 4500,
+        placeBetTimeout: 4000,
         hitJackpotTimeout: 200000,
         enabledApiLogs: true,
+    },
+    authenticateSettings: {
+        url: "http://l2_auth_api_local_1:5000",
+        id: "game-services",
+        secret: "gameservices@20luminet&",
+        requestTimeout: 10000,
+        useAuthenticate: true,
+        audiences: ["api", "admin-api"],
+    },
+    userServiceSettings: {
+        url: "http://l2_user_service_local_1:5000",
     },
     notificationApiSettings: {
         url: "http://l2_notification_service_local_1:5000/api",

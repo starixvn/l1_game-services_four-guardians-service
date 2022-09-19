@@ -1,9 +1,19 @@
 import { Core } from "sc-game-base";
 import { SlotGameData, SlotGameDefinition } from "sc-slot-game-base";
-
 import appConfigs from "./app-configs";
 import FourGuardiansContainerRegistry from "./four-guardians-container-registry";
 import gameSettings from "./game-settings";
+import notificationAuthenticationHelpers from "./helpers/notification-authentication-helpers";
+
+class App extends Core.BaseGameApp {
+    async configureServices(app) {
+        await super.configureServices(app);
+
+        if (appConfigs.notificationApiSettings) {
+            await notificationAuthenticationHelpers.init(this.appConfigs.notificationApiSettings);
+        }
+    }
+}
 
 const run = async () => {
     const gameData = new SlotGameData(gameSettings.durations.wholeRound);
