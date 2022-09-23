@@ -11,7 +11,7 @@ export default class FourGuardiansJackpotPublisher extends JackpotPublisher {
      */
 
     constructor(gameId, gameName, gameData, logService, appConfigs, notificationServiceCommunicator) {
-        super(gameId, gameName, gameData, logService, appConfigs);
+        super(gameId, gameName, gameData, appConfigs, logService);
         this.notificationServiceCommunicator = notificationServiceCommunicator;
     }
 
