@@ -7945,10 +7945,10 @@ sc-common@1.8.1:
     mongoose-long "^0.3.0"
     numeral "^2.0.6"
 
-sc-game-base@3.1.0:
-  version "3.1.0"
-  resolved "https://npm.lumigame.com/sc-game-base/-/sc-game-base-3.1.0.tgz#f5dac651391c86658dfd99478f81d869ef9f4340"
-  integrity sha512-7bAyn0pP7aWqRAv5ose4ilayU9IzeeHpt8TjaisG8ljGJzPrrLHwg/WiKzspdQM0Sjs5js/h+4tltGdk+wAdqQ==
+sc-game-base@3.1.1-beta.0:
+  version "3.1.1-beta.0"
+  resolved "https://npm.lumigame.com/sc-game-base/-/sc-game-base-3.1.1-beta.0.tgz#29261d34cf1eac757dadd7f3914ced5e479c616e"
+  integrity sha512-xhI3dwluwamSia+ZuQBC7Ovmhtxf/xstHHBRheAOU1ZMb/dFWP6FibILi08xAniLGO3zPMitThbKvWt1agkDuw==
   dependencies:
     awilix "^4.3.1"
     axios "^0.20.0"
@@ -7974,14 +7974,14 @@ sc-semantic-release@^1.1.0:
   resolved "https://npm.lumigame.com/sc-semantic-release/-/sc-semantic-release-1.2.0.tgz#52ea7bd1aa4d5c41315a16c2c4e4f0437befdbcb"
   integrity sha512-izZqZiS8hL05cGzYbcR3+GZ1Oktr9rU1nIL05S9mZnEBm5nZfqzRkSpR2OHVJARjYsMI5dps0oUX1HjFV9x47w==
 
-sc-slot-game-base@1.5.0:
-  version "1.5.0"
-  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.5.0.tgz#d3c88323fbe7ed16b50f53d4b7d7b7ad7f52ab8c"
-  integrity sha512-mKq5Eed9B1w7dzhW7sOF6MENAbp0319Y8qajw++EGlFIAncC/728+MmTLIH/m0H2epVrV/Gy2bT3YYfE3PNmsQ==
+sc-slot-game-base@1.5.1-beta.0:
+  version "1.5.1-beta.0"
+  resolved "https://npm.lumigame.com/sc-slot-game-base/-/sc-slot-game-base-1.5.1-beta.0.tgz#383cf78a116469553ecb40885788fced1e0a20c9"
+  integrity sha512-1r3+LIuVEWdhVTh9cXPFaQQZOnpMrGcT8RpdUGc0horlXOymHyDX0vZcBWVjv90gB4k3UdJQF3WT+jWysuQMew==
   dependencies:
     chance "^1.1.7"
     lodash "^4.17.20"
-    sc-game-base "3.1.0"
+    sc-game-base "3.1.1-beta.0"
 
 semantic-release@^17.1.1:
   version "17.4.7"
