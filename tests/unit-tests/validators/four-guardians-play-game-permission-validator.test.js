@@ -1,5 +1,5 @@
 import { PlayGamePermissionValidator } from "sc-game-base/src/core/validators";
-import FourGuardiansPlayGamePermissionValidator from "../../src/validators/four-guardians-play-game-permission-validator";
+import FourGuardiansPlayGamePermissionValidator from "../../../src/validators/four-guardians-play-game-permission-validator";
 
 describe("FourGuardiansPlayGamePermissionValidator", () => {
     let fourGuardiansPlayGamePermissionValidator;

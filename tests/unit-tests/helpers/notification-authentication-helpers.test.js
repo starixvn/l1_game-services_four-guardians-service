@@ -1,5 +1,5 @@
 import BearerAuthenticator from "sc-game-base/src/core/helpers/bearer-authenticator";
-import helpers from "../../src/helpers/notification-authentication-helpers";
+import helpers from "../../../src/helpers/notification-authentication-helpers";
 import { logger } from "sc-common";
 import Chance from "chance";
 import Axios from "axios";

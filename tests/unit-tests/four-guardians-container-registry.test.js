@@ -1,4 +1,4 @@
-import FourGuardiansContainerRegistry from "../src/four-guardians-container-registry";
+import FourGuardiansContainerRegistry from "../../src/four-guardians-container-registry";
 import * as Slot from "sc-slot-game-base";
 import { InjectionMode } from "awilix";
 

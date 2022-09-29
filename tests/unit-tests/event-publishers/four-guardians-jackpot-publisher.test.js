@@ -1,12 +1,12 @@
-import FourGuardiansJackpotPublisher from "../../src/event-publishers/four-guardians-jackpot-publisher";
-import notificationAuthenticationHelpers from "../../src/helpers/notification-authentication-helpers";
+import FourGuardiansJackpotPublisher from "../../../src/event-publishers/four-guardians-jackpot-publisher";
+import notificationAuthenticationHelpers from "../../../src/helpers/notification-authentication-helpers";
 import Chance from "chance";
 import { logger } from "sc-common";
 
 const chance = new Chance();
 
 describe("fourGuardiansJackpotPublisher", () => {
-    jest.mock("../../src/helpers/notification-authentication-helpers");
+    jest.mock("../../../src/helpers/notification-authentication-helpers");
     jest.mock("sc-common");
 
     const winner = {
