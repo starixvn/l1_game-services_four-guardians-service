@@ -1,5 +1,5 @@
-import AppConfigs from "../src/app-configs";
-import GameSettings from "../src/game-settings";
+import AppConfigs from "../../src/app-configs";
+import GameSettings from "../../src/game-settings";
 
 describe("GameSettings", () => {
     it("bet choices should have enough 25 paylines", () => {

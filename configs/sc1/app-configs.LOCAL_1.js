@@ -2,15 +2,16 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://l1_game_api_uat:5000",
-        authUrl: "http://l1_auth_api_uat:5000",
+        apiUrl: "http://l1_game_api_local_1:5000",
+        authUrl: "http://l1_auth_api_local_1:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
         },
+
         useAuthenticate: true,
+        requestTimeout: 10000,
         placeBetTimeout: 4000,
-        requestTimeout: 10000, // 10s
         hitJackpotTimeout: 200000,
         enabledApiLogs: true,
     },
@@ -23,7 +24,7 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend%4022027@10.99.99.187:27201/?replicaSet=SabaUAT",
+        url: "mongodb://lmn_backend:LmnBackend@10.10.50.14:17101/?replicaSet=L1pLocal&appName=FourGuardians",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
@@ -32,12 +33,12 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://52368c4019044019885440599c180bda@10.2.190.51:9009/24",
+        sentryUrl: "https://13f39b8359404ed5aec23655e64ccf78@sentry.lumigame.com/2",
         logIdentifier: "fourguardians",
-        env: "UAT",
+        env: "LOCAL_1",
     },
     authenticateSettings: {
-        url: "http://l1_auth_api_uat:5000",
+        url: "http://l1_auth_api_local_1:5000",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
@@ -45,21 +46,16 @@ export default {
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "http://l1_user_service_uat:5000",
+        url: "http://l1_user_service_local_1:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
     enableCorsWs: true,
-    corsUrls: [
-        "http://l1uat.sgamesuat.com",
-        "https://l1uat.sgamesuat.com",
-        "http://l1uatadm.sgamesuat.com",
-        "https://l1uatadm.sgamesuat.com",
-    ],
+    corsUrls: ["http://localhost:7456", "http://localhost:7000", "https://l1-games1.lumigame.com", "https://l1-admin1.lumigame.com"],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
     metrics: {
         enable: true,
         secretKey: "6c1f0f28-70f2-46ae-b031-22624a6cd8df",
     },
-    enableMsgpackParser: true,
+    enableMsgpackParser: false,
 };

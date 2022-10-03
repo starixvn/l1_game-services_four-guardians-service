@@ -2,14 +2,14 @@ export default {
     hostingPort: 5000,
     apiSettings: {
         enabledApi: true,
-        apiUrl: "http://l1_game_api_AWS:5000",
-        authUrl: "http://l1_auth_api_AWS:5000",
+        apiUrl: "http://l1_game_api_prod:5000",
+        authUrl: "http://l1_auth_api_prod:5000",
         client: {
             id: "game-server",
             secret: "gameserver@20luminet&",
         },
         useAuthenticate: true,
-        placeBetTimeout: 4500,
+        placeBetTimeout: 4000,
         requestTimeout: 10000, // 10s
         hitJackpotTimeout: 200000,
         enabledApiLogs: true,
@@ -23,7 +23,7 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:Sb%7B5r%40Xy4X%256%28%24%5Bt%252HsOxJ%7CQt9jdR%26t@10.99.99.56:27101/?replicaSet=L1_SabaAWS",
+        url: "mongodb://lmn_backend:M7K4ttH%2AtZ3ml%3F%29%7CA%5DjN4%3FLBhwF%266IO%3C@10.99.99.54:27101,10.99.99.53:27102/?replicaSet=SabaMain&appName=FourGuardians",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
@@ -32,12 +32,12 @@ export default {
         },
     },
     sentry: {
-        sentryUrl: "http://58fc00e79ab34a3bab04a79038760cb8@10.99.99.187:803/8",
+        sentryUrl: "http://58fc00e79ab34a3bab04a79038760cb8@10.2.189.50:9009/8",
         logIdentifier: "fourguardians",
-        env: "AWS",
+        env: "PROD",
     },
     authenticateSettings: {
-        url: "http://l1_auth_api_AWS:5000",
+        url: "http://l1_auth_api_prod:5000",
         id: "game-services",
         secret: "gameservices@20luminet&",
         requestTimeout: 10000,
@@ -45,11 +45,29 @@ export default {
         audiences: ["api", "admin-api"],
     },
     userServiceSettings: {
-        url: "http://localhost:8004/api",
+        url: "http://l1_user_service_prod:5000",
     },
     adminSecretKey: "asWDEer4yGdgsdqR4uqmKQZgh",
     enableCorsWs: true,
-    corsUrls: ["https://sc1-games.sportsfun.app", "https://sc1-adm.sportsfun.app"],
+    corsUrls: [
+        "http://sabagame.com",
+        "http://www.sabagame.com",
+        "https://sabagame.com",
+        "https://www.sabagame.com",
+        "https://www.gamesaba.com",
+        "https://gamesaba.com",
+        "http://www.gamesaba.com",
+        "http://gamesaba.com",
+        "http://admg.sabagame.com",
+        "https://admg.sabagame.com",
+        "http://adm.sabagame.com",
+        "https://adm.sabagame.com",
+    ],
     freeSpinLiveSeconds: 86400, // 1 day
     bonusLiveSeconds: 123,
+    metrics: {
+        enable: true,
+        secretKey: "30d15293-c7de-4c77-9293-b85d6c5bfe1a",
+    },
+    enableMsgpackParser: true,
 };
