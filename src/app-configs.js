@@ -8,7 +8,7 @@ export default {
             id: "game-server",
             secret: "gameserver@20luminet&",
         },
-        useAuthenticate: true,
+        useAuthenticate: false,
         requestTimeout: 10000,
         placeBetTimeout: 4000,
         hitJackpotTimeout: 200000,
@@ -24,7 +24,7 @@ export default {
     database: {
         url: "mongodb://127.0.0.1:27017",
         options: {
-            dbName: "minigame",
+            dbName: "minigame2",
             useNewUrlParser: true,
             useUnifiedTopology: true,
             auto_reconnect: true,
