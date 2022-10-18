@@ -57,9 +57,6 @@ export default {
         logIdentifier: "fourguardians",
         env: "AWS",
     },
-    authenticateSettings: {
-        audiences: ["api", "admin-api"],
-    },
     adminSecretKey: "asWDEer4yGdgsdqR4uqmKQZgh",
     enableCorsWs: true,
     orsUrls: ["https://sc2-games.sportsfun.app", "https://sc2-adm.sportsfun.app"],
