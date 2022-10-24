@@ -19,7 +19,7 @@ const run = async () => {
     const gameData = new SlotGameData(gameSettings.durations.wholeRound);
     const definition = new SlotGameDefinition(gameSettings);
     const container = new FourGuardiansContainerRegistry().register(appConfigs, definition, gameData);
-    const app = new Core.BaseGameApp("Four Guardians", appConfigs);
+    const app = new App("Four Guardians", appConfigs);
 
     await app.run();
     await app.startGame(container);
