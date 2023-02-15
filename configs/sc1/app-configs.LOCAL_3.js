@@ -23,7 +23,7 @@ export default {
     },
     enabledLogs: true,
     database: {
-        url: "mongodb://lmn_backend:LmnBackend@10.10.50.14:27106/?replicaSet=L1pppLocal&appName=FourGuardians",
+        url: "mongodb://lmn_backend:LmnBackend@10.10.50.12:39103,10.10.50.13:39103,10.10.50.14:39103/?replicaSet=L1pppLocal&appName=FourGuardians",
         options: {
             dbName: "minigame",
             useNewUrlParser: true,
@@ -48,8 +48,6 @@ export default {
         url: "http://l1_user_service_local_3:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-    enableCorsWs: false,
-    corsUrls: ["https://localhost:7456", "https://localhost:7000", "https://l1-games3.lumigame.com", "https://l1-admin3.lumigame.com"],
     metrics: {
         enable: true,
         secretKey: "6c1f0f28-70f2-46ae-b031-22624a6cd8df",
