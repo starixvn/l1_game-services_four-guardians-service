@@ -49,7 +49,7 @@ export default {
         url: "http://l1_user_service_local_1:5000",
     },
     adminSecretKey: "asWDEerfOIdgsdqRTFabvmgh",
-    freeSpinLiveSeconds: 86400, // 1 day
+    freeSpinLiveSeconds: 120, // 1 day
     bonusLiveSeconds: 123,
     metrics: {
         enable: true,
