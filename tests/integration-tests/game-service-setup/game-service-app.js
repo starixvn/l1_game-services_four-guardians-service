@@ -1,9 +1,9 @@
 import { Core } from "sc-game-base";
 import { initAPIStub, stubUserService } from "sc-game-service-integration-utils";
 
-import appConfigs from "../../../src//app-configs";
-import gameSettings from "../../../src/game-settings";
+import appConfigs from "../../../src/app-configs.IGT";
 import ServiceContainerRegistry from "../../../src/four-guardians-container-registry";
+import gameSettings from "../../../src/game-settings";
 
 export const run = async () => {
     initAPIStub(appConfigs.apiSettings.apiUrl);
