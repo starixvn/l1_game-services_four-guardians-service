@@ -1,11 +1,19 @@
 import { PlayGamePermissionValidator } from "sc-game-base/src/core/validators";
+import { SlotGameData } from "sc-slot-game-base";
 import FourGuardiansPlayGamePermissionValidator from "../../../src/validators/four-guardians-play-game-permission-validator";
 
 describe("FourGuardiansPlayGamePermissionValidator", () => {
     let fourGuardiansPlayGamePermissionValidator;
-
+    const gameData = new SlotGameData();
+    gameData.gameConfigs = {
+        slotConfigs: {
+            jackpot: {
+                enabled: true,
+            },
+        },
+    };
     beforeEach(() => {
-        fourGuardiansPlayGamePermissionValidator = new FourGuardiansPlayGamePermissionValidator();
+        fourGuardiansPlayGamePermissionValidator = new FourGuardiansPlayGamePermissionValidator(gameData);
     });
 
     it("should inherit PlayGamePermissionValidator", () => {
