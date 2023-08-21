@@ -6,14 +6,14 @@ describe("FourGuardiansPlayGamePermissionValidator", () => {
     let fourGuardiansPlayGamePermissionValidator;
     const gameData = new SlotGameData();
     gameData.gameConfigs = {
-        slotConfigs: {
+        slotsConfig: {
             jackpot: {
                 enabled: true,
             },
         },
     };
     beforeEach(() => {
-        fourGuardiansPlayGamePermissionValidator = new FourGuardiansPlayGamePermissionValidator(gameData);
+        fourGuardiansPlayGamePermissionValidator = new FourGuardiansPlayGamePermissionValidator(null, gameData);
     });
 
     it("should inherit PlayGamePermissionValidator", () => {
