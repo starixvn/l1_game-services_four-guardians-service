@@ -1,7 +1,7 @@
 import awilix from "awilix";
 import * as Slot from "sc-slot-game-base";
 import FourGuardiansJackpotPublisher from "./event-publishers/four-guardians-jackpot-publisher";
-import { FourGuardiansFames, FourGuardiansFreeSpins, FourGuardiansRounds } from "./models";
+import { FourGuardiansFames, FourGuardiansFreeSpins, FourGuardiansRounds, FourGuardiansJackpots } from "./models";
 import FourGuardiansPlayGamePermissionValidator from "./validators/four-guardians-play-game-permission-validator";
 import notificationAuthenticationHelpers from "./helpers/notification-authentication-helpers";
 
@@ -14,6 +14,7 @@ export default class FourGuardiansContainerRegistry extends Slot.SlotContainerRe
             roundsRepository: asValue(FourGuardiansRounds),
             famesRepository: asValue(FourGuardiansFames),
             freeSpinsRepository: asValue(FourGuardiansFreeSpins),
+            jackpotsRepository: asValue(FourGuardiansJackpots)
         });
     }
 

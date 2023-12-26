@@ -43,6 +43,7 @@ describe("service-container-registry", () => {
                 roundsRepository: expect.any(Function),
                 famesRepository: expect.any(Function),
                 freeSpinsRepository: expect.any(Function),
+                jackpotsRepository: expect.any(Function)
             });
         });
     });
